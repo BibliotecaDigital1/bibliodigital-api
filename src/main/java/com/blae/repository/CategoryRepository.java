@@ -1,5 +1,5 @@
 package com.blae.repository;
 
-public interface HabitacionRepository {
+public interface CategoryRepository {
     void hellow();
 }
