@@ -1,5 +1,11 @@
 package com.blae.repository;
 
-public interface CategoryRepository {
-    void hellow();
+
+import com.blae.model.entity.Category;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+public interface CategoryRepository extends JpaRepository<Category, Integer> {
+
+
 }
