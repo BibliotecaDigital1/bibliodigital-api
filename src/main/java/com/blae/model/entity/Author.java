@@ -2,12 +2,14 @@ package com.blae.model.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+
 import java.time.LocalDateTime;
 
 @Data
 @Entity
 @Table(name = "authors")
 public class Author {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

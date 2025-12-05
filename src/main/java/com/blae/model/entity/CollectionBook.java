@@ -1,10 +1,7 @@
 package com.blae.model.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
@@ -12,13 +9,13 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "collection_books")
 @IdClass(CollectionBookPK.class)
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
 public class CollectionBook {
     @Id
+    @Column(name = "book_id")
     private Integer book;
+    
     @Id
+    @Column(name = "collection_id")
     private Integer collection;
 
     @Column(name = "added_date", nullable = false)
